@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #e2e2e2;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.game {
+    width: 360px;
+    height: 640px;
+    display: inline-block;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+.container {
+}
+
+.header-div {
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+}
+
+.body-div {
+    width: 100%;
+    height: 420px;
+    padding-top: 10px;
+    display: inline-block;
+    box-shadow: 0px -8px 0px #475a6d;
+    background-image: url(img/bg.png);
+}
+
+.footer-div {
+    width: 100%;
+    height: 140px;
+    display: inline-block;
+    box-shadow: 0px -8px 0px #475a6d;
+    position: relative;
+}
+
+.blur-div {
+    width: 360px;
+    height: 640px;
+    background-color: rgba(44, 62, 80, 0.75);
+    position: absolute;
+    z-index: 2;
+}
+
+.settings-div {
+    width: 334px;
+    height: 380px;
+    background-color: #bdc3c7;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 13px;
+    z-index: 3;
+}
+
+.logo-container {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.logo-letter-div {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #ecf0f1;
+    color: #34495e;
+    margin: 1px 1px;
+    border-radius: 15%;
+}
+
+.logo-letter-label {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.keyword-container {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.keyword-letter-div {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-color: #ecf0f1;
+    color: #34495e;
+    margin: 1px 1px;
+    border-radius: 15%;
+}
+
+.keyword-letter-label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.keyword {
+    width: 300px;
+    display: inline-block;
+    background-color: #ecf0f1;
+    color: #34495e;
+    margin-top: 4px;
+    padding: 2px 2px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #34495e;
+    line-height: 14px;
+}
+
+.keyword-result {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.guess-result {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.point-result {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 10px;
+    color: #bdc3c7;
+}
+
+h3 {
+    margin-top: 5px;
+    color: #304457;
+}
+
+
+h4 {
+    margin-top: 10px;
+    color: #bdc3c7;
+}
+
+.users-div {
+    padding-top: 5px;
+    vertical-align: middle;
+    height: 375px;
+    width: 90%;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(236,240,241,0.5);
+}
+
+.keywords-div {
+    padding-top: 5px;
+    vertical-align: middle;
+    height: 375px;
+    width: 100%;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.back-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(img/back.png);
+    background-size: cover;
+    background-color: #34495e;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-color: #ecf0f1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.settings-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(img/settings.png);
+    background-size: cover;
+    background-color: #34495e;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-color: #ecf0f1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.settings-button-game {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(img/settings.png);
+    background-size: cover;
+    background-color: #34495e;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-right: 43px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-color: #ecf0f1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.start-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(img/start.png);
+    background-size: cover;
+    background-color: #34495e;
+    line-height: 60px;
+    font-weight: 800;
+    font-size: 24px;
+    display: inline-block;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-color: #ecf0f1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.screenshot {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(img/camera.png);
+    background-size: cover;
+    background-color: #34495e;
+    line-height: 60px;
+    font-weight: 800;
+    font-size: 24px;
+    display: inline-block;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-color: #ecf0f1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+#counter {
+    position: absolute;
+    top: 37px;
+    left: 147px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #34495e;
+    color: #ecf0f1;
+    line-height: 60px;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 1px;
+    display: inline-block;
+    cursor: default;
+    border-color: #ecf0f1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.volume-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(img/volume-up.png);
+    background-size: cover;
+    background-color: #34495e;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-color: #ecf0f1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.volume-button-game {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(img/volume-up.png);
+    background-size: cover;
+    background-color: #34495e;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-right: 5px;
+    margin-left: 43px;
+    cursor: pointer;
+    border-color: #ecf0f1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.info-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(img/info.png);
+    background-size: cover;
+    background-color: #34495e;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-color: #ecf0f1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.player-div {
+    position: relative;
+    text-align: left;
+    width: 240px;
+    height: 30px;
+    background-color: #ecf0f1;
+    display: inline-block;
+    line-height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #34495e;
+    vertical-align: middle;
+    color: #34495e;
+    margin: 2px 2px;
+}
+
+.player-name {
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 50px;
+    z-index: 1;
+    position: relative;
+    text-shadow: 1px 0 0 #ecf0f1, -1px 0 0 #ecf0f1, 0 1px 0 #ecf0f1, 0 -1px 0 #ecf0f1, 1px 1px #ecf0f1, -1px -1px 0 #ecf0f1, 1px -1px 0 #ecf0f1, -1px 1px 0 #ecf0f1;
+}
+
+.player-color {
+    height: 20px;
+    width: 20px;
+    background-color: #c0392b;
+    border-radius: 3px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.kw-player-div {
+    position: relative;
+    text-align: left;
+    width: 120px;
+    height: 20px;
+    background-color: #ecf0f1;
+    display: inline-block;
+    line-height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #34495e;
+    vertical-align: middle;
+    color: #34495e;
+    margin: 2px 2px;
+    white-space: nowrap;
+}
+
+.kw-player-name {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 25px;
+    z-index: 1;
+    position: relative;
+    top: -2px;
+    text-shadow: 1px 0 0 #ecf0f1, -1px 0 0 #ecf0f1, 0 1px 0 #ecf0f1, 0 -1px 0 #ecf0f1, 1px 1px #ecf0f1, -1px -1px 0 #ecf0f1, 1px -1px 0 #ecf0f1, -1px 1px 0 #ecf0f1;
+}
+
+.kw-player-color {
+    height: 15px;
+    width: 15px;
+    background-color: #c0392b;
+    border-radius: 3px;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+
+.guess {
+    margin: 15px 15px;
+    width: 80%;
+    height: 30px;
+    padding: 5px 5px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ecf0f1;
+}
+
+
+
+.loading {
+    height: 75px;
+    width: 75px;
+    background-image: url(img/loading.gif);
+    background-color: transparent;
+    background-size: cover;
+    display: inline-block;
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.result-bar {
+    width: 30px;
+    height: 80px;
+    background-color: #f76355;
+    margin: 5px 5px;
+    display: inline-block;
+}
+
+.scrollbar {
+    padding-top: 5px;
+    vertical-align: middle;
+    height: 375px;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(236,240,241,0.5);
+}
+
+#scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #cccccc;
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+    background-color: #B03C3F;
+    border-radius: 4px;
+}
+
+    #scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #BF4649;
+        border: 1px solid #333333;
+    }
+
+    #scrollbar::-webkit-scrollbar-thumb:active {
+        background-color: #A6393D;
+        border: 1px solid #333333;
+    }
